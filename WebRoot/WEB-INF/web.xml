@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.wst.filter.EncodingFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>CheckLoginFilter</filter-name>
+        <filter-class>com.wst.filter.CheckLoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>CheckLoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+   
+    
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrgServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.OrgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SectionServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.SectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FundServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.FundServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InfoServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.InfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StuffServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.StuffServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LeaderServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.LeaderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PriServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.wst.servlet.PriServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SupervisorServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>SupervisorServlet</servlet-class>
+  </servlet>
+
+  
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/userservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrgServlet</servlet-name>
+    <url-pattern>/orgservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SectionServlet</servlet-name>
+    <url-pattern>/sectionservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FundServlet</servlet-name>
+    <url-pattern>/fundservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InfoServlet</servlet-name>
+    <url-pattern>/infoservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuffServlet</servlet-name>
+    <url-pattern>/stuffservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LeaderServlet</servlet-name>
+    <url-pattern>/leaderservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PriServlet</servlet-name>
+    <url-pattern>/priservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupervisorServlet</servlet-name>
+    <url-pattern>/supervisorservlet</url-pattern>
+  </servlet-mapping>
+ 
+
+	
+</web-app>
